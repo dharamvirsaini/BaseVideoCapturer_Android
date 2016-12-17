@@ -62,31 +62,6 @@ public class MainActivity extends AppCompatActivity
         mPublisherViewContainer = (RelativeLayout) findViewById(R.id.publisherview);
         mSubscriberViewContainer = (LinearLayout) findViewById(R.id.subscriberview);
 
-        //Button b = (Button)findViewById(R.id.button);
-
-      /*  b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                mSession.unpublish(mPublisher);
-                mPublisher.destroy();
-                mPublisher = new Publisher(MainActivity.this, "publisher", new ScreensharingCapturer(MainActivity.this, MainActivity.this.findViewById(R.id.button)));
-                mPublisher.setPublisherListener(MainActivity.this);
-                //mPublisher.setPublisherVideoType(PublisherKit.PublisherKitVideoType.PublisherKitVideoTypeCamera);
-//BaseVideoRenderer
-
-
-                //mPublisher.setStyle(BaseVideoRenderer.STYLE_VIDEO_SCALE, BaseVideoRenderer.STYLE_VIDEO_FILL);
-                if(mPublisherViewContainer.getChildCount() > 0)
-                    mPublisherViewContainer.removeAllViews();
-                mPublisherViewContainer.addView(mPublisher.getView());
-
-                mSession.publish(mPublisher);
-
-            }
-        });*/
-
-
         requestPermissions();
     }
 
